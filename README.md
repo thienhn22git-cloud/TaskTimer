@@ -1,50 +1,27 @@
-# Welcome to your Expo app 👋
+# 🍅 TaskTimer - Pomodoro App (React Native + Expo)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## 📖 Giới thiệu
+**TaskTimer** là một ứng dụng Pomodoro cơ bản được xây dựng bằng **React Native (Expo)**.  
+Ứng dụng giúp bạn quản lý thời gian làm việc và nghỉ ngơi hiệu quả, đồng thời lưu lại lịch sử các phiên để theo dõi năng suất cá nhân.
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Tính năng chính
+- ⏱️ **3 chế độ thời gian:**
+  - Pomodoro (25 phút)
+  - Short Break (5 phút)
+  - Long Break (15 phút)
+- 📝 **Đặt tên phiên làm việc** trước khi bắt đầu.
+- 🔔 **Thông báo và rung nhẹ** khi kết thúc phiên.
+- 💾 **Lưu lịch sử phiên** (tên, chế độ, thời gian kết thúc) vào **AsyncStorage**.
+- 🔄 **Kết thúc phiên thủ công** và lưu lại kết quả.
+- 🕓 **Giữ màn hình luôn sáng** trong khi đếm giờ (expo-keep-awake).
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 🧩 Công nghệ & Thư viện sử dụng
+- [React Native (Expo)](https://expo.dev/)
+- `expo-notifications` - gửi thông báo khi kết thúc phiên  
+- `expo-haptics` - phản hồi rung  
+- `expo-keep-awake` - giữ màn hình sáng  
+- `@react-native-async-storage/async-storage` - lưu lịch sử phiên làm việc
